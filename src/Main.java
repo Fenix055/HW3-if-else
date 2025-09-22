@@ -18,8 +18,7 @@ public class Main {
         System.out.print("На улице " + temperature + " градусов");
         if (temperature < 5) {
             System.out.println(" нужно надеть шапку");
-        }
-        else {
+        } else {
             System.out.println(" можно идти без шапки");
         }
 
@@ -29,8 +28,7 @@ public class Main {
         System.out.print("Если скорость " + speed + ", то ");
         if (speed > 60) {
             System.out.println(" придется заплатить штраф");
-        }
-        else {
+        } else {
             System.out.println(" можно ездить спокойно");
         }
 
@@ -38,14 +36,11 @@ public class Main {
         System.out.print("Если возраст человека равен " + age + ", то ему нужно ходить ");
         if (age >= 2 && age <= 6) {
             System.out.println("в детский сад");
-        }
-        if (age >= 7 && age <= 17) {
+        } else if (age >= 7 && age <= 17) {
             System.out.println("в школу");
-        }
-        if (age >= 18 && age <= 24) {
+        } else if (age >= 18 && age <= 24) {
             System.out.println("в университет");
-        }
-        if (age > 24) {
+        } else if (age > 24) {
             System.out.println("на работу");
         }
 
@@ -53,11 +48,9 @@ public class Main {
         System.out.print("Если возраст ребенка равен " + age + ", то ему ");
         if (age < 5) {
             System.out.println("нельзя кататься на аттракционе");
-        }
-        if (age > 5 && age < 14) {
+        } else if (age >= 5 && age < 14) {
             System.out.println("можно кататься на аттракционе в сопровождении");
-        }
-        if (age >= 14) {
+        } else {
             System.out.println("можно кататься на аттракционе без сопровождения взрослого");
         }
 
@@ -65,11 +58,9 @@ public class Main {
         int people = new Random().nextInt(103);
         if (people < 60) {
             System.out.println("в вагоне есть сидячее место");
-        }
-        if (people >= 60 && people < 102) {
+        } else if (people >= 60 && people < 102) {
             System.out.println("в вагоне есть стоячее место");
-        }
-        if (people >= 102) {
+        } else {
             System.out.println("вагон уже полностью забит");
         }
 
@@ -80,11 +71,9 @@ public class Main {
 
         if (one > two && one > three) {
             System.out.println("Наибольшее число one = " + one);
-        }
-        if (two > one && two > three) {
+        } else if (two > one && two > three) {
             System.out.println("Наибольшее число two = " + two);
-        }
-        if (three > two && one < three) {
+        } else if (three > two && one < three) {
             System.out.println("Наибольшее число three = " + three);
         }
     }
